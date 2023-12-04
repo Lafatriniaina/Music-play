@@ -2382,6 +2382,14 @@
   resolved "https://registry.npmjs.org/@react-navigation/elements/-/elements-1.3.21.tgz"
   integrity sha512-eyS2C6McNR8ihUoYfc166O1D8VYVh9KIl0UQPI8/ZJVsStlfSTgeEEh+WXge6+7SFPnZ4ewzEJdSAHH+jzcEfg==
 
+"@react-navigation/native-stack@^6.9.11":
+  version "6.9.17"
+  resolved "https://registry.npmjs.org/@react-navigation/native-stack/-/native-stack-6.9.17.tgz"
+  integrity sha512-X8p8aS7JptQq7uZZNFEvfEcPf6tlK4PyVwYDdryRbG98B4bh2wFQYMThxvqa+FGEN7USEuHdv2mF0GhFKfX0ew==
+  dependencies:
+    "@react-navigation/elements" "^1.3.21"
+    warn-once "^0.1.0"
+
 "@react-navigation/native@^6.0.0", "@react-navigation/native@^6.1.9":
   version "6.1.9"
   resolved "https://registry.npmjs.org/@react-navigation/native/-/native-6.1.9.tgz"
@@ -4163,10 +4171,10 @@ expo-asset@~8.10.1:
     path-browserify "^1.0.0"
     url-parse "^1.5.9"
 
-expo-av@~13.4.1:
-  version "13.4.1"
-  resolved "https://registry.npmjs.org/expo-av/-/expo-av-13.4.1.tgz"
-  integrity sha512-0K8QEFzZeNGrppzYUs8wOtjOyPPkxzlVYbEHM6WzIQOG1uYYNOJkJB3aQHVFXHmz+AzoHwMrUjcschofwaMNeg==
+expo-av@^13.6.0:
+  version "13.6.0"
+  resolved "https://registry.npmjs.org/expo-av/-/expo-av-13.6.0.tgz"
+  integrity sha512-42dDX53uao+IxuecNRcAvLuO7CiF9lriCufDfw2sSIGKRYox6m2RXYFstVpDSv2gzsuScGk7fwT23EUrUXbk8A==
 
 expo-constants@~14.4.2:
   version "14.4.2"
@@ -4175,6 +4183,11 @@ expo-constants@~14.4.2:
   dependencies:
     "@expo/config" "~8.1.0"
     uuid "^3.3.2"
+
+expo-document-picker@~11.5.4:
+  version "11.5.4"
+  resolved "https://registry.npmjs.org/expo-document-picker/-/expo-document-picker-11.5.4.tgz"
+  integrity sha512-4lpRixi33kjoQQy9lfrGs48yFRMOgBgdnqjYWVFe85WFy/WkEoFC2E8usxcFdrIigtfy9Z+HY3/je4lHEYqyLg==
 
 expo-file-system@~15.4.0, expo-file-system@~15.4.5:
   version "15.4.5"
@@ -4199,6 +4212,11 @@ expo-linear-gradient@^12.5.0:
   version "12.5.0"
   resolved "https://registry.npmjs.org/expo-linear-gradient/-/expo-linear-gradient-12.5.0.tgz"
   integrity sha512-GOV2wODawr2biRCtF2Yb5+wLzvnwXS8dAblfQO7qjyh4f7TDTJn7X0TlVSDMNhIdbAcZBrdxvGFeE2iXdzQ6ow==
+
+expo-media-library@~15.4.1:
+  version "15.4.1"
+  resolved "https://registry.npmjs.org/expo-media-library/-/expo-media-library-15.4.1.tgz"
+  integrity sha512-lpWcT4pynWcE7TyNMUkLFH4YcueCTnq7UOJYRR0vewPEJeQXwRscka7zBtrhA+RSsJda013Q0615K+5lRLt14Q==
 
 expo-modules-autolinking@>=0.8.1, expo-modules-autolinking@1.5.1:
   version "1.5.1"
@@ -6534,6 +6552,18 @@ react-is@^17.0.1:
     invariant "^2.2.4"
     lodash "^4.17.21"
     prop-types "^15.7.2"
+
+react-native-marquee-view@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.npmjs.org/react-native-marquee-view/-/react-native-marquee-view-1.0.5.tgz"
+  integrity sha512-KNiJTbieGrASTs6/ECT3lV4fnGwm9HIe68wT+XNGvrwA/ICoS9Ayhr+Yx17PL+xnCyojqiEmXVUcmIfBcqjD+A==
+
+react-native-marquee@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.npmjs.org/react-native-marquee/-/react-native-marquee-0.5.0.tgz"
+  integrity sha512-s2BKaZDdJp4I522H+cCPWFEwMeg+OllNCjVD5WQ5kdyIlcXkB2PFD3BzQ3T5hFlF/1KazYYlM4TaZ/nPJhJM7w==
+  dependencies:
+    "@react-navigation/native-stack" "^6.9.11"
 
 react-native-paper@^5.11.3:
   version "5.11.3"
