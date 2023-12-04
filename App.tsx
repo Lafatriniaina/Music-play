@@ -33,6 +33,7 @@ export default function App() {
             component={Playlists}
             options={{
             headerTitle: '',
+            headerStyle: { backgroundColor: '#dfd3df' },
             headerLeft: () => (
               <MaterialIcons name="menu-open" size={40} color="black" style={PlaylistsStyles.menu} />
             ),
@@ -56,9 +57,10 @@ export default function App() {
         />
         <Stack.Screen 
             name="Ecouter" 
-            component={Ecouter} 
+            component={Ecouter}
             options={{
               headerTitle: '',
+              headerStyle: { backgroundColor: '#dfd3df' },
               headerLeft: () => <CustomHeaderLeft />,
               headerRight: () => (
                 <FontAwesome5 name="ellipsis-v" size={24} color="black" style={PlaylistsStyles.Arrow} />
