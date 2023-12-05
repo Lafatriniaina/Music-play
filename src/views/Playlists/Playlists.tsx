@@ -52,8 +52,15 @@ const Playlists: PlaylistsComponent = ({ navigation }) => {
           mediaType: 'audio',
         });
       
-        const audioFiles = assets.filter(file => file.filename.endsWith('.mp3'));
+        const audioExtensions = ['.mp3', '.MP3', '.wav', '.ogg', '.aac', '.flac']; 
+
+        const audioFiles = assets.filter(file => {
+            const lowerCaseFilename = file.filename.toLowerCase();
+            return audioExtensions.some(extension => lowerCaseFilename.endsWith(extension));
+        });
+
         setAudioFiles(audioFiles);
+
        };
       
        const playAudio = async (uri) => {
@@ -264,6 +271,7 @@ const styles = StyleSheet.create({
         flexDirection: 'row', 
         justifyContent: 'space-around', 
         alignItems: 'center',
+        backgroundColor: '#b5b0d4',
         // shadowColor: '#808080',
         // shadowOffset: { width: -10, height: 0 }, // Décalage horizontal positif pour une ombre sur le côté gauche
         // shadowOpacity: 0.2,
