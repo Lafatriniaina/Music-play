@@ -12,4 +12,5 @@ An Android application for listening to music created using <a href="https://rea
 <p align="center">
 <img src="./assets/images/music_1.jpg" width="200" alt="expo Logo" style="margin: 20px;">
 <img src="./assets/images/music_2.jpg" width="200" alt="expo Logo" style="margin: 20px;">
+<img src="./assets/images/music_3.jpg" width="200" alt="expo Logo" style="margin: 20px;">
 </p>
